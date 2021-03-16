@@ -1,0 +1,16 @@
+{% block content %}
+    <link rel="stylesheet" href="/static/css/1.css">
+    <header><h1>Логин</h1></header>
+    <section class="login">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ user }}
+            {{ form.as_p }}
+            <button type="submit">Войти</button>
+            <a href="/register" class="btn">Регистрация</a>
+            <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">
+                Login
+              </a>
+        </form>
+    </section>
+{% endblock %}

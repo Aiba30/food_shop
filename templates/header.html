@@ -1,0 +1,18 @@
+
+
+<header><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1></header>
+<div><a href="/login"><button>Войти</button></a></div>
+{{user}}
+
+   <div><a href="/logout"><button class="gr" type="submit">выход</button></a></div>
+    <a href="/myp"><span class="sr">Мой профиль</span></a>
+<form method="post">
+    {{rop}}
+    {% csrf_token %}
+    <button class="btn" type="submit">Найти</button>
+</form>
+
+
+
+
+

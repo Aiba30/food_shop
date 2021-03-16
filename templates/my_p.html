@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/p.css">
+</head>
+<body class="lo">
+<div class="myp"></div>
+<p class="p">Изменить профиль</p>
+<div class="kort"></div>
+<form action="" method="post">
+
+   {% csrf_token %}
+    {{form}}
+    <button type="submit">Редактировать</button>
+</form>
+</body>
+</html>
